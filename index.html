@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chaithanya | Projects</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <section class="hero">
+    <h1 id="typing"></h1>
+  </section>
+
+  <body>
+    <div class="background-slider">
+      <div class="slide active"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+    </div>
+
+    <div class="overlay"></div>
+    <header class="hero">
+      <p>
+        Explore a curated collection of software projects, web applications, and
+        AI-powered solutions developed using modern technologies. This page
+        highlights work across<br />
+        <strong>Java Full Stack Development</strong>,
+        <strong>Database Systems</strong>,
+        <strong>Frontend Technologies</strong>, and
+        <strong>Artificial Intelligence</strong>, demonstrating practical
+        implementations and innovative <br />
+        approaches to real-world challenges.
+      </p>
+
+      <a href="#projects" class="btn"> View Projects </a>
+    </header>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.SeB8--nZgMjUvGRY3dHelQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="project"
+          />
+
+          <div class="card-content">
+            <h3>Restaurant Management System</h3>
+
+            <p>
+              The Restaurant Management System is a full-stack web application
+              designed to streamline restaurant operations through real-time
+              order management, role-based access control, kitchen workflow
+              automation, and revenue analytics. Built with Spring Boot,
+              React.js, and MySQL, it enhances coordination between staff and
+              improves overall operational efficiency.
+            </p>
+
+            <button
+              onclick="
+                openModal(
+                  'Restaurant Management System',
+                  'Complete restaurant management solution with online ordering and inventory tracking.',
+                  'https://restaurant-system-management.lovable.app/',
+                  'https://github.com/ChaithanyaBalapuram/Restaurant-Management-System',
+                )
+              "
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="card">
+          <img src="https://picsum.photos/500/300?random=2" alt="project" />
+
+          <div class="card-content">
+            <h3>Employee Management</h3>
+
+            <p>CRUD application using Spring Boot.</p>
+
+            <button
+              onclick="
+                openModal(
+                  'Employee Management',
+                  'Manage employees efficiently.',
+                  'https://your-live-link.com',
+                  'https://github.com/yourusername/employee-management',
+                )
+              "
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 id="projectTitle"></h2>
+
+        <p id="projectDesc"></p>
+
+        <div class="buttons">
+          <a id="liveLink" target="_blank"> View Live Demo </a>
+
+          <a id="githubLink" target="_blank"> View Source Code </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
